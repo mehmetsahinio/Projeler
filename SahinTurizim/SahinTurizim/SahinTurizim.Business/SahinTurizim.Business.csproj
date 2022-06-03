@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SahinTurizim.Data\SahinTurizim.Data.csproj" />
+    <ProjectReference Include="..\SahinTurizim.Entity\SahinTurizim.Entity.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="NuGet.CommandLine" />
+    <None Remove="Abstract\" />
+    <None Remove="Concrete\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstract\" />
+    <Folder Include="Concrete\" />
+  </ItemGroup>
+</Project>

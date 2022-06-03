@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{52517521-519A-4C81-835C-A373FDD19235}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SahinTurizim.WebUI/Startup.cs">
+    <Files>
+      <File FileName="SahinTurizim.WebUI/Views/Shared/_Layout.cshtml" Line="24" Column="36" />
+      <File FileName="SahinTurizim.WebUI/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="SahinTurizim.WebUI/Controllers/HomeController.cs" Line="31" Column="27" />
+      <File FileName="SahinTurizim.WebUI/Program.cs" Line="17" Column="10" />
+      <File FileName="SahinTurizim.WebUI/Startup.cs" Line="36" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SahinTurizim" expanded="True">
+            <Node name="SahinTurizim.Business" expanded="True" />
+            <Node name="SahinTurizim.Data" expanded="True" />
+            <Node name="SahinTurizim.WebUI" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.SahinTurizim.WebUI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
