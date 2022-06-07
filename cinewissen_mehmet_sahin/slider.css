@@ -1,11 +1,35 @@
-#resim1{
-    width: 95% !important;
-    height: 400px !important;
-    margin: auto;
+body{
+  background-color: black !important;
 }
-#row{
-
-    
+.navbar{
+  position: fixed !important;
+  z-index: 1!important; top: 0;
+  width: 100%;
+}
+#navbar-brand{
+  background-color: white; 
+  height: 60px; 
+  width: 100px;
+}
+.navbar ul li button{
+  width: 100%; border: none;
+}
+header div button{
+  width: 100%; background-color: black; border: none;
+}
+.col{
+height: 500px;
+}
+#resim1{
+  width: 95% !important;
+  height: 400px !important;
+  margin: auto;
+}
+#btn1{
+border: none; height: 500px; width: 100%;
+}
+.card{
+height: 100%; width: 100%;
 }
 .container{
   position: fixed ;

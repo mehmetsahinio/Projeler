@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style2.css">
+    <script src="script.js"></script>
+    <title>Wissen Blog</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <nav>
+            <div class="navbar-container">
+                <div class="navbar-logo">
+                    <h2 class="logo-animation">MehmetBlog</h2>
+                </div>
+                <div class="navbar-content">
+                    <div class="navbar-ul">
+                        <a class="active" href="/index.html">HOME</a>
+                        <a href="/css.html">CSS/Flex</a>
+                       
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="contents" style="height:100%; margin-top:100px !important;">
+            <div id="CSS" style="height:100%;">
+                <div id="name"><i style="font-size: 20px;" class="fa-brands fa-css3-alt"></i> CSS</div>
+                <div style="display: flex; flex-direction: column; align-items: center; font-size: 22px;">
+                    <h1 style="margin-bottom: 20px;">CSS Flexbox Nedir, Nasıl Kullanılır?</h1>
+                    <p style="margin-bottom: 20px;">
+                        CSS’de duyarlı tasarımlar oluşturmak için kullanılan pek çok yöntem vardır. Bunlar arasında en
+                        yaygın ve kullanışlı olanı Flexbox yöntemidir. Bu yazımda CSS’in Flexbox özelliğinin genel
+                        kullanımlarını ve ipuçlarını göstererek; neden, nasıl ve nerelerde kullanıldığı hakkındaki
+                        bilgilerimi sizinle paylaşacağım. Öncelikle kısaca flexbox olarak ifade edebileceğimiz CSS
+                        Flexbox'un arkasındaki ana fikir, boyutları bilinmeyen veya bilinen öğeleri bulundukları alanı
+                        yerleştirmek, hizalamak ve dağıtmak için daha
+                        verimli bir yol sağlamaktır. Flexbox, öğeleri mevcut boş alanı dolduracak şekilde genişletir
+                        veya taşmayı önlemek için küçültür.
+                    </p>
+                    <img src="" alt="">
+                    <h2 style="margin-bottom: 20px;">Flexbox Özellikleri</h2>
+                    <p style="margin-bottom: 20px;">Bu bölümde, elastik kutu modelindeki kutuyu ve içindeki öğelerin
+                        davranışlarını öğreneceğiz.</p>
+                    <div style="margin-bottom: 20px; display: flex;"><img
+                            src="https://imgs.developpaper.com/imgs/3027761121-80fe5fd534651932_articlex.png" alt="">
+                        <img src="https://imgs.developpaper.com/imgs/2345323670-9ed54692d8b141bf_articlex.png" alt="">
+                    </div>
+
+                    <h3 style="margin-bottom: 20px;">Display</h3>
+                    <p style="margin-bottom: 20px;">Öncelikle bir kutunun flex özelliğini elde edebilmesi için "display"
+                        özelliğini "flex" olarak
+                        tanımlamamız gerekiyor. Kapsayıcı div öğesine <span>display: flex</span>
+                        uygulandığında, tüm doğrudan alt div'ler esnek öğeler haline gelir ve yeni davranışlar kazanır.
+                    </p>
+
+                    <h3 style="margin-bottom: 20px;">Flex-Direction</h3>
+                    <img style="margin-bottom: 20px;"
+                        src="https://imgs.developpaper.com/imgs/1889305776-92d921dbb622b473_articlex.png" alt="">
+                    <p style="margin-bottom: 20px;">Bu nitelik ile, kutudaki öğelerin ana ekseninin yönünü
+                        tanımlayabiliriz. Flexbox tek yönlü bir
+                        yerleşim modelidir. Esnek öğeler, varsayılan olarak yataya doğru uzar
+                        <span>(flex-direction:row)</span>.
+                        Dolayısı kutudaki içindeki tüm öğeler yan yana listelenir. Diğer durumu ise dikey sütunlarda
+                        <span>(flex-direction: column)</span> sıralanmış
+                        olarak düşününebilirsiniz.
+                    </p>
+
+                    <h3 style="margin-bottom: 20px;">Justify-Content</h3>
+                    <img style="margin-bottom: 20px;" src="https://imgs.developpaper.com/imgs/2167172659-87f66e055f4a43e6_articlex.png" alt="">
+                    <p style="margin-bottom: 20px;">Bu nitelik öğeleri ana eksen boyunca hizalamak için kullanılır.
+                        Flex-direction: row; iken öğeleri yatayda hizalamak için kullanılır.
+                        Flex-direction: column; iken öğeleri dikeyde hizalamak için kullanılır.</p>
+                    <p style="margin-bottom: 20px;">
+                    <div>
+                        <li style="margin-bottom: 20px;"><span>flex-start (varsayılan)</span>: Öğeleri başlangıç
+                            noktasında (sola dayalı) hizalar</li>
+                        <li style="margin-bottom: 20px;"><span>flex-end</span>: Öğeleri bitiş noktasında (sağa dayalı)
+                            hizalar.</li>
+                        <li style="margin-bottom: 20px;"><span>center</span>: Öğeleri ortada hizalar.</li>
+                        <li style="margin-bottom: 20px;"><span>space-between</span>: İlk öğe sola dayalı, son öğe sağa
+                            dayalı ve diğerleri ortalı olacak şekilde hizalar.</li>
+                        <li style="margin-bottom: 20px;"><span>space-around</span>: İlk ve son öğe hariç diğerlerinin
+                            arası eşit olacak şekilde hizalar. Space-between'in aksine en soldaki ve en sağdaki kenara
+                            yaslı değildir. Kenar ile aralarında bir miktar boşluk vardır</li>
+                        <li style="margin-bottom: 20px;"><span>space-evenly </span>: Tüm öğelerin arası aynı eşitlikte
+                            olacak şekilde hizalar. Space-between ve space-around'den farklı olarak kenar ile aralarında
+                            bulunan boşluk, diğer öğelerin arasında bulunan boşluk ile eşittir.</li>
+                    </div>
+                    </p>
+                    <p><a style="color:rgb(83, 156, 199); text-decoration: none;" href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_justify-content">Buradan denemelerimizi yapabiliriz!</a></p>
+                    <h3>Align-Items</h3>
+                    <img style="margin-bottom: 20px;"
+                        src="https://imgs.developpaper.com/imgs/418716288-7750b900bdbfd17d_articlex.png" alt="">
+                    <p>
+                        Öğelerin dikey eksende hizasını ayarlamak için kullanılır. Yukarıdaki görselde kullanımları ve
+                        sonuçları gösterilmiştir. Birde değerlerin ne işe yaradıklarına bakalım.
+                    </p>
+                    <p style="margin-bottom: 20px;">
+                    <div>
+                        <li style="margin-bottom: 20px;"><span>flex-start</span>: Öğeleri yukarıya doğru hizalar.</li>
+                        <li style="margin-bottom: 20px;"><span>flex-end</span>: Öğeleri aşağıya doğru hizalar..</li>
+                        <li style="margin-bottom: 20px;"><span>center</span>: Öğeleri ortaya doğru hizalar.</li>
+                        <li style="margin-bottom: 20px;"><span>baseline</span>: Öğelerin içindeki ilk satırı baz alarak
+                            ortalama yapar.</li>
+                        <li style="margin-bottom: 20px;"><span>stretch (varsayılan)</span>: Hizalama yapmaz, öğelerin
+                            yüksekliklerini kapsayıcıya göre uzatır.</li>
+                    </div>
+                    </p>
+                    <p><a style="color:rgb(83, 156, 199); text-decoration: none;" href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_align-items">Buradan denemelerimizi yapabiliriz!</a></p>
+                    <h2>NOT</h2>
+                    <h4 style="padding-bottom: 15px;">Tüm bu konuştuklarımızı basitçe özetlemek için aşağıdaki videoda
+                        yer alan siteden yararlanmak istedim.</h4>
+                    <a style="color:rgb(36, 48, 54); text-decoration: none; background-color: aqua; margin-bottom: 15px;" href="https://codingfantasy.com">Dene!</a>
+                    <video style="margin-bottom: 25px;" height="750px" autoplay controls>
+                        <source src="https://codingfantasy.com/videos/cfvsyoutube.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+       
+</body>
+
+</html>

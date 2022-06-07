@@ -1,160 +1,142 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-.main-container {
-    width: 100%;
-    height: 100%;
-    background-image: url(TAHTAi.jpg);
-    background-repeat: repeat;
-    background-position: center;
-
+body {
+    /* width: 100vh; */
+    height: 100hv;
 }
 
-.menu {
+nav{
     position: fixed;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(40, 90, 134);
-}
-
-#baslik {
-    margin-left: 40px;
-}
-
-#logo {
-    font-size: 25px;
-    font-weight: bold;
-    width: 40%;
-    height: 20%;
-    text-decoration: none;
-    color: white;
-}
-
-ul {
-    display: flex;
-    list-style: none;
-    text-align: center;
-    justify-content: center;
-    border-radius: 2px;
-}
-
-li {
-    height: 35px;
-    border-radius: 5px;
-    margin-left: 3px;
-}
-
-ul li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    padding: 7px;
-    border-radius: 3px;
-}
-
-ul li :hover {
-    background-color: black;
-    opacity: 0.3;
-}
-
-.header {
-    padding-top: 65px;
-    height: 100vh;
-    width: 100%;
-}
-
-#slider-container {
-    position: absolute;
-    margin: 60px 0 0 330px;
-    width: 700px;
-    height: 404px;   
-}
-.slide {
-    display: none;
-}
-
-#prevSlide,
-#nextSlide {
-    cursor: pointer;
-    position: absolute;
-    color: white;
     top: 0;
-    padding-top: 25%;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.5s ease;
-    height: 56%;
-
-}
-
-#prevSlide {
-    left: 0px;
-    border-radius: 0px 100% 100% 0px;
-    padding-left: 10px;
-    padding-right: 15px;
-}
-
-#nextSlide {
-    right: 0px;
-    border-radius: 100% 0px 0px 100%;
-    padding-left: 15px;
-    padding-right: 10px;
-}
-
-#prevSlide:hover,
-#nextSlide:hover {
-    background-color: rgba(233, 10, 10, 0.6);
-}
-
-h1 {
-    margin: 0 70px;
-    width: 1212px;
-    text-align: center;
-    background-color: chocolate;
-    border-radius: 4px;
-    color: navy;
-}
-
-.header p {
-    font-size: 20px;
-    margin: 10px 70px;
-    color: white;
-}
-
-.menu ul li a.active {
-    background-color: red;
-}
-.iletisim-container{
-    width: 500px;
-    height: 500px;
-    margin: 20px 450px;
-    border: 4px solid white;
-
-}
-#flexnedir a{
-    text-decoration: none;
-    color: white;
-    margin-left: 200px;
-    font-size: 30px;
-}
-#flexnedir a:hover{
-    color: black;
-    transition: 0.5s ease;
-}
-#contact {
-    animation: pulse 8s infinite alternate both;
     width: 100%;
-    display: flex;
-    justify-items: center;
-    height: 50%;
 }
+
+.navbar-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: rgb(50, 50, 56);
+    height: 80px;
+
+}
+
+.navbar-logo {
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+    top: 35px;
+    color: white;
+}
+
+.logo-animation{
+    position: relative;
+    color: white;
+    animation-name: logo;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes logo{
+    0% {top:0px; left:0px}
+    25% {top:0px; left:75px}
+    50% {top:0px; left:150px}
+    75% {top:0px; left:75px}
+    100% {top:0px; left:0px}
+
+}
+
+.navbar-ul {
+    width: 75%;
+    position: absolute;
+    top: 40px;
+    left: 40%;
+    display: flex;
+}
+
+.navbar-ul a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 0 2% 0 2%;
+}
+
+.navbar-ul a:hover{
+    color: lightblue;
+    transform: scale(1.2);
+}
+
+.active{
+    background-color: red;
+    padding: 15px 0 0 0;
+    margin-bottom: 15px;
+}
+section{
+    background-image:
+    linear-gradient(to bottom right, rgba(228, 228, 220, 0.5), rgba(12, 12, 12, 0.836)),
+    url('https://wallpaperaccess.com/full/7403967.jpg');
+}
+.main-section {
+    width: 100%;
+    height: 740px; 
+}
+
+.content{
+    height: 740px;
+    padding: 130px 200px 0 200px;
+    text-align: center;
+    
+}
+#css-content{
+    height: 2200px;
+}
+.content-section{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+.content-title{
+    background-color: orangered;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.content-text{
+    text-align: start;
+    color: white;
+    font-size: 16px;
+    padding: 20px 30px 0 30px;
+}
+
+.form-container{
+    color: white;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.form-second-container{
+    
+    margin: 15px;
+}
+
+.form-second-container label{
+    margin: 10px;
+    margin-right: 40px;
+}
+.form-second-container input{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.form-second-container textarea{
+    margin-top: 10px;
+}
+
 
 #conc {
     width: 100%;
@@ -186,4 +168,10 @@ h1 {
 #concDiv div i {
 
     height: 25px;
+}
+
+#a {
+    width: 250px;
+    height: 25px;
+    background-color: #d9dfdf;
 }

@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{47560A1F-1548-4E4B-8A8F-1981821C1779}|Default">
+  <MonoDevelop.Ide.ItemProperties.DatabaseImageProduct PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DatabaseImageProduct/Views/Home/Create.cshtml">
+    <Files>
+      <File FileName="DatabaseImageProduct/Controllers/HomeController.cs" Line="24" Column="53" />
+      <File FileName="DatabaseImageProduct/Models/Context/ProductDbContext.cs" />
+      <File FileName="DatabaseImageProduct/Models/Entities/Product.cs" />
+      <File FileName="DatabaseImageProduct/Views/Home/Create.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DatabaseImageProduct" expanded="True">
+            <Node name="DatabaseImageProduct" expanded="True" selected="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Context" expanded="True" />
+                <Node name="Entities" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

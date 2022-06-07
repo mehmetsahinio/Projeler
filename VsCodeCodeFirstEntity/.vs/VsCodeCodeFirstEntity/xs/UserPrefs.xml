@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{C2DFB1F3-69BF-4705-A7B4-69D270719911}|Default">
+  <MonoDevelop.Ide.ItemProperties.VsCodeCodeFirstEntity PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/CategoryController.cs">
+    <Files>
+      <File FileName="Models/Entityies/Publisher.cs" Line="1" Column="1" />
+      <File FileName="Controllers/CategoryController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="VsCodeCodeFirstEntity" expanded="True">
+            <Node name="VsCodeCodeFirstEntity" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="CategoryController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True">
+                <Node name="Context" expanded="True" />
+                <Node name="Entityies" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Category" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

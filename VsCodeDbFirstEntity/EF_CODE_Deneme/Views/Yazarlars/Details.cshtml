@@ -1,0 +1,44 @@
+@model Yazarlar
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<h1>Detay Sayfası</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div>
+                <label asp-for="Id">ID</label>
+                <input type="text" asp-for="Id" class="form-control" readonly>
+            </div>
+            <div>
+                <label asp-for="AdSoyad">Ad Soyad</label>
+                <input type="text" asp-for="AdSoyad" class="form-control" readonly>
+            </div>
+            <div>
+                <label asp-for="Cinsiyet">Cinsiyet</label>
+                <input type="text" asp-for="Cinsiyet" class="form-control" readonly>
+            </div>
+            <div>
+                <label asp-for="DogumTarihi">Doğum Tarihi</label>
+                <input type="date" asp-for="DogumTarihi" class="form-control" readonly>
+            </div>
+            <div>
+                <label asp-for="Tel">Tel</label>
+                <input type="text" asp-for="Tel" class="form-control" readonly>
+            </div>
+            <div>
+                <label asp-for="Mail">Mail Adresi</label>
+                <input type="text" asp-for="Mail" class="form-control" readonly>
+            </div>
+            <div>
+                <label>Tür</label>
+                 <select asp-for="TurlerId" asp-items="ViewBag.Yazar" class="form-select form-control"
+                    disabled="disabled"></select>
+            </div>
+            <a asp-action="Index" class="btn btn-primary">Yazarlar Sayfasına geri dön</a>
+        </div>
+    </div>
+</div>
