@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\serha\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\serha\\.nuget\\packages"
+      "/Users/mehmetsahin/.dotnet/store/|arch|/|tfm|",
+      "/Users/mehmetsahin/.nuget/packages"
     ]
   }
 }
